@@ -20,7 +20,7 @@ const Dashboard = () => {
     family: "Familia González",
     address: "Calle Verde 123, Villa Nueva",
     joinDate: "2024-03-15",
-    currentPoints: 1,250,
+    currentPoints: 1250,
     totalCompost: 85.5,
     weeklyStreak: 12,
     rank: 23
