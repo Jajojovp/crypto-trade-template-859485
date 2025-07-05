@@ -40,6 +40,7 @@ const Navigation = () => {
   };
 
   const navItems = [
+    { name: "Inicio", href: "/" },
     { name: "Educación", href: "/educacion" },
     { name: "Comunidad", href: "/comunidad" },
     { name: "Soporte", href: "/soporte" },

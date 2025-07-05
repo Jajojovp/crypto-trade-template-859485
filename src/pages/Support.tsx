@@ -51,10 +51,10 @@ const Support = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-100">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="container px-4 pt-24 pb-12">
+      <div className="container mx-auto px-4 pt-24 pb-12 max-w-7xl">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -62,13 +62,18 @@ const Support = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Soporte y Ayuda
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             ¿Necesitas ayuda con tu compostaje domiciliario? Estamos aquí para apoyarte 
             en cada paso de tu journey hacia un hogar más sostenible.
           </p>
+          <div className="flex justify-center mb-8">
+            <Button size="lg" className="button-gradient">
+              Iniciar Ahora
+            </Button>
+          </div>
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
@@ -82,15 +87,15 @@ const Support = () => {
             >
               <Card className="h-full hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
-                  <div className="bg-orange-100 text-orange-600 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <div className="bg-primary/10 text-primary p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                     <channel.icon className="w-8 h-8" />
                   </div>
                   <CardTitle className="text-xl">{channel.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-600 mb-2">{channel.description}</p>
-                  <p className="font-semibold text-gray-900 mb-4">{channel.contact}</p>
-                  <Button className="bg-orange-600 hover:bg-orange-700">
+                  <p className="font-semibold text-foreground mb-4">{channel.contact}</p>
+                  <Button>
                     {channel.action}
                   </Button>
                 </CardContent>
@@ -103,7 +108,7 @@ const Support = () => {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-center justify-center">
-              <HelpCircle className="w-6 h-6 text-blue-600" />
+              <HelpCircle className="w-6 h-6 text-primary" />
               Preguntas Frecuentes
             </CardTitle>
           </CardHeader>
@@ -117,11 +122,11 @@ const Support = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="p-6 border rounded-lg bg-white shadow-sm"
                 >
-                  <h4 className="font-semibold text-gray-900 mb-3 flex items-start gap-2">
-                    <Book className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <h4 className="font-semibold text-foreground mb-3 flex items-start gap-2">
+                    <Book className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     {faq.question}
                   </h4>
-                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
                 </motion.div>
               ))}
             </div>

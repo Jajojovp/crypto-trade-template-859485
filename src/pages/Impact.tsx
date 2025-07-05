@@ -4,6 +4,7 @@ import { BarChart, TrendingUp, Leaf, Home, Users, Globe } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const Impact = () => {
   const impactStats = [
@@ -52,10 +53,10 @@ const Impact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-100">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="container px-4 pt-24 pb-12">
+      <div className="container mx-auto px-4 pt-24 pb-12 max-w-7xl">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -63,13 +64,18 @@ const Impact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Impacto Ambiental Comunitario
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Descubre el impacto positivo que estamos generando juntos através del 
             compostaje domiciliario inteligente en nuestras comunidades.
           </p>
+          <div className="flex justify-center mb-8">
+            <Button size="lg" className="button-gradient">
+              Iniciar Ahora
+            </Button>
+          </div>
         </motion.div>
 
         {/* Impact Stats */}
@@ -86,8 +92,8 @@ const Impact = () => {
                   <div className={`${stat.color} text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center`}>
                     <stat.icon className="w-8 h-8" />
                   </div>
-                  <h3 className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</h3>
-                  <p className="text-gray-600">{stat.label}</p>
+                  <h3 className="text-3xl font-bold text-foreground mb-2">{stat.number}</h3>
+                  <p className="text-muted-foreground">{stat.label}</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -99,7 +105,7 @@ const Impact = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <BarChart className="w-5 h-5 text-emerald-600" />
+                <BarChart className="w-5 h-5 text-primary" />
                 Progreso Mensual 2024
               </CardTitle>
             </CardHeader>
@@ -124,7 +130,7 @@ const Impact = () => {
                           initial={{ width: 0 }}
                           animate={{ width: `${(data.households / 3000) * 100}%` }}
                           transition={{ duration: 1, delay: index * 0.1 }}
-                          className="bg-gradient-to-r from-emerald-500 to-teal-500 h-2 rounded-full"
+                          className="bg-primary h-2 rounded-full"
                         />
                       </div>
                     </div>
@@ -138,7 +144,7 @@ const Impact = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Users className="w-5 h-5 text-teal-600" />
+                <Users className="w-5 h-5 text-primary" />
                 Ranking por Barrio
               </CardTitle>
             </CardHeader>
@@ -154,24 +160,24 @@ const Impact = () => {
                   >
                     <div className="flex justify-between items-start mb-2">
                       <div>
-                        <h4 className="font-semibold text-gray-900">
+                        <h4 className="font-semibold text-foreground">
                           #{index + 1} {neighborhood.name}
                         </h4>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-sm text-muted-foreground">
                           {neighborhood.households} hogares • {neighborhood.compost}t compost
                         </p>
                       </div>
-                      <span className="bg-teal-100 text-teal-800 px-2 py-1 rounded-full text-xs font-medium">
+                      <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs font-medium">
                         {neighborhood.participation}% participación
                       </span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={{ width: `${neighborhood.participation}%` }}
-                        transition={{ duration: 1, delay: index * 0.2 }}
-                        className="bg-gradient-to-r from-teal-500 to-emerald-500 h-2 rounded-full"
-                      />
+                        <motion.div
+                          initial={{ width: 0 }}
+                          animate={{ width: `${neighborhood.participation}%` }}
+                          transition={{ duration: 1, delay: index * 0.2 }}
+                          className="bg-primary h-2 rounded-full"
+                        />
                     </div>
                   </motion.div>
                 ))}

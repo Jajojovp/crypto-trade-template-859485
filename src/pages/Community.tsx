@@ -53,10 +53,10 @@ const Community = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-100">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="container px-4 pt-24 pb-12">
+      <div className="container mx-auto px-4 pt-24 pb-12 max-w-7xl">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -64,13 +64,18 @@ const Community = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Comunidad de Compostaje
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Conecta con otros vecinos comprometidos con el compostaje domiciliario. 
             Comparte experiencias, aprende juntos y construye una comunidad más sostenible.
           </p>
+          <div className="flex justify-center mb-8">
+            <Button size="lg" className="button-gradient">
+              Iniciar Ahora
+            </Button>
+          </div>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8">
@@ -78,7 +83,7 @@ const Community = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Calendar className="w-5 h-5 text-purple-600" />
+                <Calendar className="w-5 h-5 text-primary" />
                 Eventos Comunitarios
               </CardTitle>
             </CardHeader>
@@ -108,7 +113,7 @@ const Community = () => {
                       </p>
                     </div>
                     <p className="text-sm text-gray-700 mb-3">{event.description}</p>
-                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                    <Button size="sm">
                       Participar
                     </Button>
                   </motion.div>
@@ -121,7 +126,7 @@ const Community = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <MessageSquare className="w-5 h-5 text-pink-600" />
+                <MessageSquare className="w-5 h-5 text-primary" />
                 Foro de Discusión
               </CardTitle>
             </CardHeader>
@@ -144,7 +149,7 @@ const Community = () => {
                   </motion.div>
                 ))}
                 
-                <Button className="w-full bg-pink-600 hover:bg-pink-700">
+                <Button className="w-full">
                   Ver Todos los Temas
                 </Button>
               </div>

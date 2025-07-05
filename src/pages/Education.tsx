@@ -11,10 +11,10 @@ import DownloadableResources from "@/components/education/DownloadableResources"
 
 const Education = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="container px-4 pt-24 pb-12">
+      <div className="container mx-auto px-4 pt-24 pb-12 max-w-7xl">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,26 +22,29 @@ const Education = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Educación Ambiental Vecinal
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Aprende todo sobre compostaje domiciliario inteligente, desde conceptos básicos hasta 
             técnicas avanzadas para maximizar tu producción de abono natural.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button size="lg">
               <Book className="mr-2 w-5 h-5" />
               Guías Completas
             </Button>
-            <Button size="lg" variant="outline" className="border-blue-600 text-blue-600">
+            <Button size="lg" variant="outline">
               <Video className="mr-2 w-5 h-5" />
               Video Tutoriales
             </Button>
-            <Button size="lg" variant="outline" className="border-blue-600 text-blue-600">
+            <Button size="lg" variant="outline">
               <Download className="mr-2 w-5 h-5" />
               Recursos Descargables
+            </Button>
+            <Button size="lg" className="button-gradient">
+              Iniciar Ahora
             </Button>
           </div>
         </motion.div>
