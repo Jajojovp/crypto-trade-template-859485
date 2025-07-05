@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Command, Menu } from "lucide-react";
+import { Sprout, Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
@@ -40,9 +40,10 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { name: "Features", href: "#features", onClick: () => scrollToSection('features') },
-    { name: "Prices", href: "#pricing", onClick: () => scrollToSection('pricing') },
-    { name: "Testimonials", href: "#testimonials", onClick: () => scrollToSection('testimonials') },
+    { name: "Educación", href: "/educacion" },
+    { name: "Comunidad", href: "/comunidad" },
+    { name: "Soporte", href: "/soporte" },
+    { name: "Impacto", href: "/impacto" },
   ];
 
   return (
@@ -56,8 +57,8 @@ const Navigation = () => {
       <div className="mx-auto h-full px-6">
         <nav className="flex items-center justify-between h-full">
           <div className="flex items-center gap-2">
-            <Command className="w-5 h-5 text-primary" />
-            <span className="font-bold text-base">CryptoTrade</span>
+            <Sprout className="w-5 h-5 text-primary" />
+            <span className="font-bold text-base">Compostaje Inteligente</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -66,23 +67,16 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  if (item.onClick) {
-                    item.onClick();
-                  }
-                }}
-                className="text-sm text-muted-foreground hover:text-foreground transition-all duration-300"
+                className="text-sm text-gray-300 hover:text-white transition-all duration-300"
               >
                 {item.name}
               </a>
             ))}
             <Button 
-              onClick={() => scrollToSection('cta')}
               size="sm"
-              className="button-gradient"
+              className="bg-green-600 hover:bg-green-700 text-white"
             >
-              Start Trading
+              <a href="/dashboard">Mi Dashboard</a>
             </Button>
           </div>
 
@@ -100,26 +94,17 @@ const Navigation = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-lg text-muted-foreground hover:text-foreground transition-colors"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setIsMobileMenuOpen(false);
-                        if (item.onClick) {
-                          item.onClick();
-                        }
-                      }}
+                      className="text-lg text-gray-300 hover:text-white transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.name}
                     </a>
                   ))}
                   <Button 
-                    onClick={() => {
-                      setIsMobileMenuOpen(false);
-                      scrollToSection('cta');
-                    }}
-                    className="button-gradient mt-4"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="bg-green-600 hover:bg-green-700 text-white mt-4"
                   >
-                    Start Trading
+                    <a href="/dashboard">Mi Dashboard</a>
                   </Button>
                 </div>
               </SheetContent>

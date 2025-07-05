@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="glass glass-hover rounded-xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <h3 className="font-medium text-lg">CryptoTrade</h3>
+              <h3 className="font-medium text-lg">Compostaje Inteligente</h3>
               <p className="text-sm text-muted-foreground">
-                Empowering traders with advanced crypto trading solutions.
+                Transformando residuos orgánicos en abono natural para comunidades sostenibles.
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="icon">
@@ -23,32 +23,32 @@ const Footer = () => {
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium">Trading</h4>
+              <h4 className="font-medium">Compostaje</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Markets
+                  <a href="/educacion" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Guías de Compostaje
                   </a>
                 </li>
                 <li>
-                  <a href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Trading Fees
+                  <a href="/comunidad" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Comunidad
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium">Resources</h4>
+              <h4 className="font-medium">Recursos</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Trading Guide
+                  <a href="/soporte" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Soporte Técnico
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Market Analysis
+                  <a href="/impacto" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Impacto Ambiental
                   </a>
                 </li>
               </ul>
