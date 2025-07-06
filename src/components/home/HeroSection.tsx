@@ -9,8 +9,8 @@ const HeroSection = () => {
     <section className="container px-4 pt-32 pb-20">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <div className="inline-block mb-4 px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">
@@ -31,11 +31,13 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
-            <Button size="lg" className="bg-green-600 hover:bg-green-700">
-              <QrCode className="mr-2 w-5 h-5" />
-              Comenzar Ahora
+            <Button size="lg" className="bg-green-600 hover:bg-green-700" asChild>
+              <Link to="/contacto">
+                <QrCode className="mr-2 w-5 h-5" />
+                Comenzar Ahora
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
+            <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50" asChild>
               <Link to="/educacion" className="flex items-center">
                 <Sprout className="mr-2 w-5 h-5" />
                 Educación Ambiental
@@ -56,8 +58,8 @@ const HeroSection = () => {
         </motion.div>
         
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative"
         >

@@ -49,11 +49,13 @@ const Index = () => {
               Únete a miles de familias que ya están transformando sus residuos orgánicos en abono natural y ganando puntos verdes reciclaje.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
-                <QrCode className="mr-2 w-5 h-5" />
-                Escanear mi Código QR
+              <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100" asChild>
+                <Link to="/contacto">
+                  <QrCode className="mr-2 w-5 h-5" />
+                  Escanear mi Código QR
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600" asChild>
                 <Link to="/educacion" className="flex items-center">
                   Aprender Más
                   <ArrowRight className="ml-2 w-4 h-4" />

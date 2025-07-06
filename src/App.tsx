@@ -11,6 +11,8 @@ import Community from "./pages/Community";
 import Support from "./pages/Support";
 import Impact from "./pages/Impact";
 
+import Contact from "./pages/Contact";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -26,6 +28,7 @@ const App = () => (
             <Route path="/educacion" element={<Education />} />
             <Route path="/comunidad" element={<Community />} />
             <Route path="/soporte" element={<Support />} />
+            <Route path="/contacto" element={<Contact />} />
             <Route path="/impacto" element={<Impact />} />
           </Routes>
         </BrowserRouter>
