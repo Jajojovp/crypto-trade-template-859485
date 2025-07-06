@@ -9,7 +9,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 30);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -49,10 +49,10 @@ const Navigation = () => {
 
   return (
     <header
-      className={`fixed top-3.5 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 rounded-full ${
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ease-in-out rounded-full ${
         isScrolled 
-          ? "h-12 bg-[#1B1B1B]/80 backdrop-blur-xl border border-white/10 w-[90%] max-w-2xl" 
-          : "h-14 bg-[#1B1B1B] w-[95%] max-w-3xl"
+          ? "h-14 bg-[#1B1B1B]/95 backdrop-blur-xl border border-white/10 w-[92%] max-w-2xl" 
+          : "h-16 bg-[#1B1B1B] w-[95%] max-w-3xl"
       }`}
     >
       <div className="mx-auto h-full px-6">
@@ -77,7 +77,7 @@ const Navigation = () => {
               size="sm"
               className="bg-green-600 hover:bg-green-700 text-white"
             >
-              <a href="/dashboard">Mi Dashboard</a>
+              <a href="/impacto">Ver Impacto</a>
             </Button>
           </div>
 
@@ -105,7 +105,7 @@ const Navigation = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="bg-green-600 hover:bg-green-700 text-white mt-4"
                   >
-                    <a href="/dashboard">Mi Dashboard</a>
+                    <a href="/impacto">Ver Impacto</a>
                   </Button>
                 </div>
               </SheetContent>

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { QrCode, Sprout, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import compostBinsImage from "@/assets/compost-bins.jpg";
 
 const HeroSection = () => {
   return (
@@ -65,7 +66,7 @@ const HeroSection = () => {
         >
           <div className="bg-white rounded-2xl shadow-2xl p-8 relative z-10">
             <img
-              src="/lovable-uploads/placeholder-compost-bin.jpg"
+              src={compostBinsImage}
               alt="Compostador casero con código QR para compostaje domiciliario inteligente"
               className="w-full h-64 object-cover rounded-lg mb-6"
             />
