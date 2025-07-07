@@ -44,22 +44,20 @@ const Navigation = () => {
     { name: "Educación", href: "/educacion" },
     { name: "Comunidad", href: "/comunidad" },
     { name: "Soporte", href: "/soporte" },
-    { name: "Impacto", href: "/impacto" },
   ];
 
   return (
     <header
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ease-in-out rounded-full ${
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ease-in-out rounded-full ${
         isScrolled 
-          ? "h-14 bg-[#1B1B1B]/95 backdrop-blur-xl border border-white/10 w-[92%] max-w-2xl" 
-          : "h-16 bg-[#1B1B1B] w-[95%] max-w-3xl"
+          ? "h-12 bg-[#1B1B1B]/95 backdrop-blur-xl border border-white/10 w-[90%] max-w-xl" 
+          : "h-14 bg-[#1B1B1B] w-[92%] max-w-2xl"
       }`}
     >
-      <div className="mx-auto h-full px-6">
+      <div className="mx-auto h-full px-4">
         <nav className="flex items-center justify-between h-full">
           <div className="flex items-center gap-2">
             <Sprout className="w-5 h-5 text-primary" />
-            <span className="font-bold text-base">Compostaje Inteligente</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -73,12 +71,6 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button 
-              size="sm"
-              className="bg-green-600 hover:bg-green-700 text-white"
-            >
-              <a href="/impacto">Ver Impacto</a>
-            </Button>
           </div>
 
           {/* Mobile Navigation */}
@@ -101,12 +93,6 @@ const Navigation = () => {
                       {item.name}
                     </a>
                   ))}
-                  <Button 
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="bg-green-600 hover:bg-green-700 text-white mt-4"
-                  >
-                    <a href="/impacto">Ver Impacto</a>
-                  </Button>
                 </div>
               </SheetContent>
             </Sheet>
