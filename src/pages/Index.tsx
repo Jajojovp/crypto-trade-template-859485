@@ -55,7 +55,7 @@ const Index = () => {
                   Escanear mi Código QR
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600" asChild>
+              <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-green-600 transition-all duration-300" asChild>
                 <Link to="/educacion" className="flex items-center">
                   Aprender Más
                   <ArrowRight className="ml-2 w-4 h-4" />
