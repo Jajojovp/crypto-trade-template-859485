@@ -1,51 +1,51 @@
 
 import { motion } from "framer-motion";
-import { Leaf, Home, Heart, Recycle } from "lucide-react";
+import { User, Heart, Leaf, Building } from "lucide-react";
 
 const benefits = [
   {
-    icon: Leaf,
-    title: "Beneficios Ambientales",
+    icon: User,
+    title: "Para ti",
     items: [
-      "Reduce hasta 30% tus residuos domésticos",
-      "Evita emisiones de metano in rellenos sanitarios", 
-      "Crea abono natural sin químicos",
-      "Mejora la salud del suelo de tu jardín"
+      "Ahorro en fertilizantes",
+      "Participación en economía circular",
+      "Reconocimiento por impacto ambiental",
+      "Descuentos en alimentos locales"
     ],
     color: "bg-green-600"
   },
   {
-    icon: Home,
-    title: "Beneficios para el Hogar",
+    icon: Heart,
+    title: "Para tu comunidad",
     items: [
-      "Ahorra dinero en fertilizantes comerciales",
-      "Reduce la frecuencia de recolección de basura",
-      "Jardín más productivo y saludable",
-      "Actividad educativa para toda la familia"
+      "Reducción de basura en vertederos",
+      "Mejora de áreas verdes",
+      "Apoyo a agricultores locales",
+      "Fortalecimiento del tejido social"
+    ],
+    color: "bg-emerald-600"
+  },
+  {
+    icon: Leaf,
+    title: "Para el medio ambiente",
+    items: [
+      "Reduce emisiones de metano",
+      "Cierra ciclos de nutrientes",
+      "Mejora la salud del suelo",
+      "Conserva recursos naturales"
     ],
     color: "bg-blue-600"
   },
   {
-    icon: Heart,
-    title: "Beneficios Comunitarios",
+    icon: Building,
+    title: "Para instituciones",
     items: [
-      "Fortalece vínculos vecinales",
-      "Educación ambiental compartida",
-      "Proyectos de jardines comunitarios",
-      "Orgullo por el impacto positivo"
+      "Venta de compost a municipalidades",
+      "Convenios con agricultores",
+      "Programas educativos para colegios",
+      "Proyectos de responsabilidad social"
     ],
     color: "bg-purple-600"
-  },
-  {
-    icon: Recycle,
-    title: "Beneficios Económicos",
-    items: [
-      "Puntos verdes canjeables por premios",
-      "Semillas y herramientas gratuitas",
-      "Talleres y capacitaciones sin costo",
-      "Descuentos en productos ecológicos"
-    ],
-    color: "bg-emerald-600"
   }
 ];
 
@@ -60,11 +60,11 @@ const BenefitsSection = () => {
         className="text-center mb-16"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Beneficios del Compostaje Comunitario
+          🌱 ¿Qué beneficios recibes?
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Descubre cómo el compostaje domiciliario inteligente beneficia a tu familia, 
-          tu comunidad y el medio ambiente de manera integral.
+          Nuestro servicio de compostaje con retiro genera valor para todos: 
+          individuos, comunidades, medio ambiente e instituciones.
         </p>
       </motion.div>
       

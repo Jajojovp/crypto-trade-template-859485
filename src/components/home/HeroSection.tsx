@@ -15,33 +15,31 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="inline-block mb-4 px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">
-            🌱 Red de Compostaje Inteligente
+            ♻️ Compostaje Domiciliario Inteligente
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Transforma tu{" "}
-            <span className="text-green-600">Basura Orgánica</span>{" "}
-            en{" "}
-            <span className="text-emerald-600">Abono Natural</span>
+            Transforma tus{" "}
+            <span className="text-green-600">Residuos Orgánicos</span>.{" "}
+            <span className="text-emerald-600">Nosotros nos encargamos del resto</span>
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-            Únete a la revolución del compostaje domiciliario inteligente. Reduce residuos, 
-            crea abono natural para tu jardín y gana puntos verdes reciclaje que puedes 
-            canjear por premios increíbles.
+            Recibe tu tarro compostador con QR, deposita tus restos orgánicos, y nosotros lo retiramos, 
+            compostamos y te devolvemos compost o descuentos en alimentos locales.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <Button size="lg" className="bg-green-600 hover:bg-green-700" asChild>
               <Link to="/contacto">
                 <QrCode className="mr-2 w-5 h-5" />
-                Comenzar Ahora
+                🚛 Quiero Participar
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50" asChild>
-              <Link to="/educacion" className="flex items-center">
+              <Link to="/contacto" className="flex items-center">
                 <Sprout className="mr-2 w-5 h-5" />
-                Educación Ambiental
+                📦 Suscríbete Hoy
               </Link>
             </Button>
           </div>
@@ -72,11 +70,11 @@ const HeroSection = () => {
             />
             <div className="text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Tu Compostador Inteligente
+                Tu Tarro Compostador con QR
               </h3>
               <p className="text-gray-600">
-                Cada familia recibe un compostador con código QR único para 
-                seguimiento de su progreso en compostaje comunitario.
+                Recibe un balde reutilizado con código QR personalizado. 
+                Nosotros nos encargamos del retiro y compostaje.
               </p>
             </div>
           </div>

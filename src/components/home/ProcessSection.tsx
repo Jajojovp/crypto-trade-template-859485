@@ -1,34 +1,41 @@
 
 import { motion } from "framer-motion";
-import { QrCode, Sprout, Award, Users } from "lucide-react";
+import { QrCode, Trash2, Truck, Sprout, Gift } from "lucide-react";
 
 const steps = [
   {
     icon: QrCode,
     number: "01",
-    title: "Recibe tu Compostador",
-    description: "Tu asociación vecinal te entrega un compostador casero con código QR único y materiales educativos.",
+    title: "Recibe tu tarro compostador con QR",
+    description: "Te entregamos un balde reutilizado con un código QR personalizado.",
     color: "from-green-400 to-green-600"
   },
   {
-    icon: Sprout,
+    icon: Trash2,
     number: "02", 
-    title: "Comienza a Compostar",
-    description: "Deposita tus residuos orgánicos siguiendo nuestras guías y escanea el QR semanalmente para registrar tu progreso.",
+    title: "Deposita tus residuos orgánicos",
+    description: "Sigue nuestras guías para echar solo lo permitido. Nada más.",
     color: "from-emerald-400 to-emerald-600"
   },
   {
-    icon: Award,
+    icon: QrCode,
     number: "03",
-    title: "Gana Puntos Verdes",
-    description: "Acumula puntos verdes reciclaje por cada registro, lectura educativa y participación en actividades comunitarias.",
+    title: "Notifica cuando esté lleno",
+    description: "Escanea el QR o usa nuestra app para avisar que está listo para retiro.",
     color: "from-blue-400 to-blue-600"
   },
   {
-    icon: Users,
+    icon: Truck,
     number: "04",
-    title: "Impacta tu Comunidad", 
-    description: "Usa tu abono natural, comparte conocimientos y ayuda a expandir la red de compostaje en tu vecindario.",
+    title: "Nosotros lo retiramos", 
+    description: "Pasamos en vehículo a buscar el tarro, lo compostamos y luego te damos dos opciones.",
+    color: "from-orange-400 to-orange-600"
+  },
+  {
+    icon: Gift,
+    number: "05",
+    title: "Elige tu recompensa", 
+    description: "✅ Recibe compost natural para tu jardín ✅ Canjea por descuentos en frutas, verduras o semillas locales",
     color: "from-purple-400 to-purple-600"
   }
 ];
@@ -44,15 +51,15 @@ const ProcessSection = () => {
         className="text-center mb-16"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          ¿Cómo Funciona el Compostaje Domiciliario Inteligente?
+          💡 ¿Cómo funciona nuestro servicio?
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Sigue estos sencillos pasos para transformar tus residuos orgánicos en abono natural 
-          y ser parte activa de la educación ambiental vecinal.
+          Proceso simple de 5 pasos: desde recibir tu tarro hasta elegir tu recompensa. 
+          Nosotros nos encargamos del compostaje profesional.
         </p>
       </motion.div>
       
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
         {steps.map((step, index) => (
           <motion.div
             key={index}

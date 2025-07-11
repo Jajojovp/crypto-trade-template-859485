@@ -5,27 +5,27 @@ import { Users, Recycle, Sprout, Award } from "lucide-react";
 const stats = [
   {
     icon: Users,
-    number: "2,547",
-    label: "Familias Participando",
-    description: "Hogares activos en compostaje domiciliario"
+    number: "2,500+",
+    label: "Familias Suscritas",
+    description: "Hogares con servicio de retiro activo"
   },
   {
     icon: Recycle,
-    number: "45.2",
-    label: "Toneladas Desviadas",
-    description: "De basura orgánica del relleno sanitario"
+    number: "850+",
+    label: "Retiros Mensuales",
+    description: "Tarros recolectados cada mes"
   },
   {
     icon: Sprout,
-    number: "15.8",
-    label: "Toneladas de Compost",
-    description: "Abono natural producido por la comunidad"
+    number: "15 Ton",
+    label: "Compost Producido",
+    description: "Abono natural generado mensualmente"
   },
   {
     icon: Award,
-    number: "184,500",
-    label: "Puntos Verdes Otorgados",
-    description: "Puntos canjeados por premios ecológicos"
+    number: "95%",
+    label: "Satisfacción",
+    description: "De usuarios satisfechos con el servicio"
   }
 ];
 
@@ -40,11 +40,11 @@ const CommunityStatsSection = () => {
         className="text-center mb-16"
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Impacto de Nuestra Red de Compostaje
+          📊 Impacto de Nuestro Servicio
         </h2>
         <p className="text-lg opacity-90 max-w-3xl mx-auto">
-          Estos números reflejan el compromiso de nuestra comunidad con la educación ambiental vecinal 
-          y el manejo sostenible de residuos orgánicos.
+          Cifras reales que demuestran el éxito de nuestro modelo de compostaje con retiro 
+          y el compromiso de las familias con la economía circular.
         </p>
       </motion.div>
       

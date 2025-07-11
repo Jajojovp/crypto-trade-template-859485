@@ -1,42 +1,42 @@
 
 import { motion } from "framer-motion";
-import { QrCode, Award, Book, Users, BarChart, Recycle } from "lucide-react";
+import { QrCode, Smartphone, BarChart, Award, Users, Building } from "lucide-react";
 
 const features = [
   {
     icon: QrCode,
-    title: "Seguimiento con Código QR",
-    description: "Cada compostador incluye un código QR único para registrar tu progreso semanal y ganar puntos verdes automáticamente.",
+    title: "Tarros con códigos QR únicos",
+    description: "Cada tarro compostador incluye un código QR personalizado para solicitar retiros y seguimiento de participación.",
     color: "bg-green-100 text-green-600"
   },
   {
-    icon: Award,
-    title: "Sistema de Puntos Verdes",
-    description: "Gana puntos por cada actividad de compostaje y canjéalos por semillas, herramientas de jardín y premios ecológicos.",
-    color: "bg-emerald-100 text-emerald-600"
-  },
-  {
-    icon: Book,
-    title: "Educación Ambiental Vecinal",
-    description: "Accede a guías completas, videos educativos y consejos semanales para optimizar tu compostaje domiciliario.",
+    icon: Smartphone,
+    title: "App móvil inteligente",
+    description: "Escanea tu QR, programa retiros, consulta tu impacto ambiental y gestiona tus recompensas desde tu teléfono.",
     color: "bg-blue-100 text-blue-600"
   },
   {
-    icon: Users,
-    title: "Compostaje Comunitario",
-    description: "Conecta con tus vecinos, comparte experiencias y participa en proyectos de compostaje colaborativo.",
-    color: "bg-purple-100 text-purple-600"
-  },
-  {
     icon: BarChart,
-    title: "Medición de Impacto",
-    description: "Visualiza en tiempo real cuánta basura orgánica has desviado del relleno sanitario y cuánto abono has producido.",
+    title: "Seguimiento de participación",
+    description: "Visualiza cuántos kilos has aportado, tu impacto en CO₂ evitado y el progreso de tu comunidad.",
     color: "bg-orange-100 text-orange-600"
   },
   {
-    icon: Recycle,
-    title: "Soporte Remoto",
-    description: "Recibe asistencia personalizada, alertas de mantenimiento y consejos específicos para tu compostador.",
+    icon: Award,
+    title: "Puntos verdes automáticos",
+    description: "Gana puntos por cada retiro realizado y canjéalos por compost, semillas, descuentos en alimentos locales.",
+    color: "bg-emerald-100 text-emerald-600"
+  },
+  {
+    icon: Users,
+    title: "Comunidad participativa",
+    description: "Conecta con otros participantes, comparte experiencias y participa en proyectos vecinales de sostenibilidad.",
+    color: "bg-purple-100 text-purple-600"
+  },
+  {
+    icon: Building,
+    title: "Reporte de impacto en la app",
+    description: "Accede a estadísticas detalladas de tu contribución ambiental y el impacto colectivo de tu comunidad.",
     color: "bg-teal-100 text-teal-600"
   }
 ];
@@ -52,11 +52,11 @@ const FeaturesSection = () => {
         className="text-center mb-16"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Características de Nuestra Red de Compostaje Inteligente
+          📱 Tecnología QR Inteligente
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Descubre cómo nuestra plataforma transforma el manejo de residuos orgánicos en tu comunidad, 
-          promoviendo la educación ambiental vecinal y la sostenibilidad.
+          Sistema completo de gestión con códigos QR, app móvil y seguimiento en tiempo real 
+          para facilitar tu participación en la economía circular.
         </p>
       </motion.div>
       
