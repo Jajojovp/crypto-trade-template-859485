@@ -43,10 +43,10 @@ const Dashboard = () => {
               <QrCode className="w-6 h-6" />
             </div>
             <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
-                Dashboard de Compostaje - {householdData.family}
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
+                🏠 Tu Historia de Compostaje - {householdData.family}
               </h1>
-              <p className="text-gray-600">{householdData.address}</p>
+              <p className="text-gray-600">📍 {householdData.address} • Miembro desde {householdData.joinDate}</p>
             </div>
           </div>
           
@@ -68,7 +68,7 @@ const Dashboard = () => {
                 <div className="flex items-center gap-3">
                   <Sprout className="w-8 h-8" />
                   <div>
-                    <p className="text-sm opacity-90">Compost Producido</p>
+                    <p className="text-sm opacity-90">Residuos Procesados</p>
                     <p className="text-2xl font-bold">{householdData.totalCompost} kg</p>
                   </div>
                 </div>
@@ -80,7 +80,7 @@ const Dashboard = () => {
                 <div className="flex items-center gap-3">
                   <Calendar className="w-8 h-8" />
                   <div>
-                    <p className="text-sm opacity-90">Semanas Consecutivas</p>
+                    <p className="text-sm opacity-90">Retiros Consecutivos</p>
                     <p className="text-2xl font-bold">{householdData.weeklyStreak}</p>
                   </div>
                 </div>

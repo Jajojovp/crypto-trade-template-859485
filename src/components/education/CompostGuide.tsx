@@ -7,27 +7,27 @@ const CompostGuide = () => {
   const guideSteps = [
     {
       icon: Leaf,
-      title: "Materiales Correctos",
-      description: "Combina materiales 'verdes' (ricos en nitrógeno) como restos de cocina, con materiales 'marrones' (ricos en carbono) como hojas secas.",
-      tips: ["Restos de frutas y verduras", "Cáscaras de huevo", "Café molido", "Hojas secas", "Papel sin tinta"]
+      title: "Residuos Perfectos para tu Tarro",
+      description: "Deposita solo residuos orgánicos permitidos. Nosotros optimizamos la mezcla en nuestra planta comunitaria para el mejor compost.",
+      tips: ["Restos de frutas y verduras", "Cáscaras de huevo", "Café molido y filtros", "Restos de té", "Cáscaras de frutos secos"]
     },
     {
       icon: Droplets,
-      title: "Humedad Adecuada",
-      description: "El compost debe tener la humedad de una esponja escurrida. Muy seco y no se descompone, muy húmedo y huele mal.",
-      tips: ["Rocía agua si está muy seco", "Agrega hojas secas si está muy húmedo", "Cubre durante lluvias intensas"]
+      title: "Programa Retiros Inteligentes",
+      description: "Escanea tu QR cuando el tarro esté 80% lleno. Nuestro sistema programa el retiro automáticamente en 24-48 horas.",
+      tips: ["Escanea QR cuando esté casi lleno", "Usa la app para programar retiros", "Recibe notificaciones de retiro"]
     },
     {
       icon: ThermometerSun,
-      title: "Temperatura Ideal",
-      description: "Un compost activo debe estar tibio al tacto (40-60°C). La temperatura indica que los microorganismos están trabajando.",
-      tips: ["Voltea si está frío", "Agrega materiales verdes para calentar", "Protege del sol directo"]
+      title: "Maximiza tus Puntos Verdes",
+      description: "Gana más puntos depositando residuos de calidad y manteniendo retiros regulares. Canjea por recompensas especiales.",
+      tips: ["Solo residuos permitidos", "Mantén regularidad en retiros", "Participa en eventos comunitarios"]
     },
     {
       icon: RotateCcw,
-      title: "Oxigenación Regular",
-      description: "Voltea tu compost cada 1-2 semanas para proporcionar oxígeno y acelerar la descomposición.",
-      tips: ["Usa una horquilla o pala", "Mueve el material del centro hacia afuera", "Hazlo después de agregar materiales nuevos"]
+      title: "Elige tu Recompensa",
+      description: "Cada 1-3 meses elige entre compost para tu jardín o descuentos en productos locales. ¡Tu eliges el valor que recibes!",
+      tips: ["Compost premium para jardín", "Descuentos en frutas y verduras", "Semillas y plantas gratuitas"]
     }
   ];
 
@@ -61,11 +61,11 @@ const CompostGuide = () => {
         className="text-center"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-          Guía Completa de Compostaje Domiciliario
+          🎯 Maximiza tu Tarro QR: Guía del Compostador Inteligente
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Aprende paso a paso cómo crear y mantener tu propio sistema de compostaje casero 
-          para convertir tus residuos orgánicos en abono natural de alta calidad.
+          Aprende qué depositar en tu tarro QR, cómo programar retiros perfectos y 
+          maximizar tus recompensas en nuestro sistema de compostaje con servicio.
         </p>
       </motion.div>
 
@@ -113,7 +113,7 @@ const CompostGuide = () => {
           <Card className="h-full border-green-200 bg-green-50">
             <CardHeader>
               <CardTitle className="text-green-800 flex items-center gap-2">
-                ✅ SÍ Puedes Compostar
+                ✅ SÍ va en tu Tarro QR
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -137,7 +137,7 @@ const CompostGuide = () => {
           <Card className="h-full border-red-200 bg-red-50">
             <CardHeader>
               <CardTitle className="text-red-800 flex items-center gap-2">
-                ❌ NO Debes Compostar
+                ❌ NO va en tu Tarro QR
               </CardTitle>
             </CardHeader>
             <CardContent>

@@ -23,11 +23,11 @@ const Education = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Educación Ambiental Vecinal
+            🌱 Aprende el Arte del Compostaje Inteligente
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Aprende todo sobre compostaje domiciliario inteligente, desde conceptos básicos hasta 
-            técnicas avanzadas para maximizar tu producción de abono natural.
+            Descubre cómo convertirte en un maestro del compostaje con servicio de retiro. 
+            Desde qué depositar en tu tarro QR hasta cómo maximizar tus recompensas verdes.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">

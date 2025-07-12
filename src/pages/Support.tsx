@@ -9,20 +9,20 @@ import { Button } from "@/components/ui/button";
 const Support = () => {
   const faqs = [
     {
-      question: "¿Qué materiales puedo compostar?",
-      answer: "Puedes compostar restos de frutas y verduras, cáscaras de huevo, café molido, hojas secas, papel sin tinta, y restos de poda. Evita carnes, lácteos, aceites y materiales tratados químicamente."
+      question: "🥬 ¿Qué puedo depositar en mi tarro QR?",
+      answer: "Deposita restos de frutas y verduras, cáscaras de huevo, café molido, té, restos de jardín. Evita carnes, lácteos, aceites y materiales no orgánicos. ¡Nosotros nos encargamos del compostaje!"
     },
     {
-      question: "¿Por qué mi compost huele mal?",
-      answer: "Un mal olor indica exceso de humedad o falta de oxígeno. Agrega materiales secos como hojas o papel, y voltea el compost para oxigenarlo. También verifica que no hayas agregado materiales inadecuados."
+      question: "🚛 ¿Cómo programo el retiro de mi tarro?",
+      answer: "Escanea el QR cuando tu tarro esté lleno o usa nuestra app para programar el retiro. Nuestro equipo pasará en 24-48 horas y lo reemplazará por uno limpio."
     },
     {
-      question: "¿Cuánto tiempo tarda en estar listo el compost?",
-      answer: "El compost casero normalmente tarda entre 3-6 meses en estar listo, dependiendo de los materiales, la temperatura, y qué tan seguido lo voltees. Un compost bien manejado puede estar listo en 2-3 meses."
+      question: "⏰ ¿Cuándo recibo mi recompensa?",
+      answer: "Dependiendo de tu plan, recibes compost o descuentos cada 1-3 meses. El compostaje ocurre en nuestra planta comunitaria y te notificamos cuando esté listo para retirar."
     },
     {
-      question: "¿Cómo canjen mis puntos verdes?",
-      answer: "Puedes canjear tus puntos verdes en la sección de recompensas de tu dashboard. Los premios incluyen semillas, herramientas de jardín, talleres gratuitos y descuentos en productos ecológicos."
+      question: "💚 ¿Cómo funcionan los puntos verdes?",
+      answer: "Ganas puntos por cada retiro exitoso y por la calidad de tus residuos. Canjéalos por compost extra, semillas, descuentos en productos locales o talleres especiales en tu dashboard."
     }
   ];
 
@@ -63,11 +63,11 @@ const Support = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Soporte y Ayuda
+            💬 Tu Soporte de Compostaje Inteligente
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            ¿Necesitas ayuda con tu compostaje domiciliario? Estamos aquí para apoyarte 
-            en cada paso de tu journey hacia un hogar más sostenible.
+            ¿Dudas sobre tu tarro QR, retiros o recompensas? Nuestro equipo te acompaña 
+            en cada paso de tu transformación hacia un hogar cero residuos.
           </p>
           <div className="flex justify-center mb-8">
             <Button size="lg" className="button-gradient">

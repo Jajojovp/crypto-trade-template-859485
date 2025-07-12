@@ -9,43 +9,43 @@ import { Button } from "@/components/ui/button";
 const Community = () => {
   const communityEvents = [
     {
-      title: "Taller de Compostaje Básico",
+      title: "🌱 Inducción: Tu Primer Tarro QR",
       date: "15 de Julio, 2024",
       location: "Centro Comunitario Villa Verde",
       participants: 25,
-      description: "Aprende los fundamentos del compostaje domiciliario con materiales reciclados."
+      description: "Aprende a usar tu tarro compostador con QR y conoce el proceso de retiro inteligente."
     },
     {
-      title: "Intercambio de Semillas",
+      title: "🌿 Feria de Recompensas Verdes",
       date: "22 de Julio, 2024", 
       location: "Plaza del Barrio",
       participants: 18,
-      description: "Comparte e intercambia semillas orgánicas con otros vecinos."
+      description: "Canjea tus puntos verdes por compost, semillas y productos locales."
     },
     {
-      title: "Limpieza Comunitaria",
+      title: "🚛 Día de Retiro Especial",
       date: "29 de Julio, 2024",
-      location: "Parque Municipal",
+      location: "Sector Villa Sustentable",
       participants: 42,
-      description: "Jornada de limpieza y clasificación de residuos orgánicos."
+      description: "Jornada especial de retiro de tarros y entrega de compost comunitario."
     }
   ];
 
   const forumTopics = [
     {
-      title: "¿Cómo equilibrar materiales verdes y marrones?",
+      title: "🤔 ¿Qué NO debo poner en mi tarro QR?",
       author: "María González",
       replies: 12,
       lastActivity: "hace 2 horas"
     },
     {
-      title: "Mi compost huele mal, ¿qué hago?",
+      title: "💚 ¿Cómo maximizo mis puntos verdes?",
       author: "Carlos Silva",
       replies: 8,
       lastActivity: "hace 5 horas"
     },
     {
-      title: "Compartiendo mi cosecha de compost",
+      title: "🏆 ¡Mi primera recompensa de compost!",
       author: "Ana López",
       replies: 15,
       lastActivity: "hace 1 día"
@@ -65,11 +65,11 @@ const Community = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Comunidad de Compostaje
+            🤝 Nuestra Red de Compostadores Inteligentes
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Conecta con otros vecinos comprometidos con el compostaje domiciliario. 
-            Comparte experiencias, aprende juntos y construye una comunidad más sostenible.
+            Únete a miles de familias que ya transforman sus residuos en valor comunitario. 
+            Comparte tu historia, aprende de otros y celebra cada kilo de residuo recuperado.
           </p>
           <div className="flex justify-center mb-8">
             <Button size="lg" className="button-gradient">

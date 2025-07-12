@@ -11,13 +11,13 @@ const Impact = () => {
     {
       icon: Home,
       number: "2,847",
-      label: "Hogares Participando",
+      label: "Familias con Tarro QR",
       color: "bg-green-500"
     },
     {
       icon: Leaf,
       number: "156.3",
-      label: "Toneladas de Compost Producido",
+      label: "Toneladas de Residuos Procesados",
       color: "bg-blue-500"
     },
     {
@@ -65,11 +65,11 @@ const Impact = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Impacto Ambiental Comunitario
+            🌍 El Impacto de Nuestra Red Inteligente
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Descubre el impacto positivo que estamos generando juntos através del 
-            compostaje domiciliario inteligente en nuestras comunidades.
+            Cada tarro QR cuenta una historia de transformación. Descubre cómo nuestra 
+            red de compostaje con retiro está revolucionando la gestión de residuos orgánicos.
           </p>
           <div className="flex justify-center mb-8">
             <Button size="lg" className="button-gradient">

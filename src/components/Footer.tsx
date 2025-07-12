@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="space-y-4">
               <h3 className="font-medium text-lg">Compostaje Inteligente</h3>
               <p className="text-sm text-muted-foreground">
-                Transformando residuos orgánicos en abono natural para comunidades sostenibles.
+                Revolucionando la gestión de residuos orgánicos con tecnología QR y servicio de retiro comunitario.
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="icon">
@@ -27,7 +27,7 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <a href="/educacion" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Guías de Compostaje
+                    Guías Tarro QR
                   </a>
                 </li>
                 <li>
